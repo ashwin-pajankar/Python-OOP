@@ -13,10 +13,11 @@ class Point:
         self.x = self.x + other.x
         self.y = self.y + other.y
         self.z = self.z + other.z
+        return Point(self.x, self.y, self.z)
 
 
 def main():
-    p1 = Point(0, 0, 0)
+    p1 = Point(3, 1, 2)
     p2 = Point(1, 2, 3)
     print(p1)
     print(p2)
